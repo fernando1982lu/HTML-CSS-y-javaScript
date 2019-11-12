@@ -1,0 +1,16 @@
+/*
+    Se definen las prioridades de estilos.
+    Prioridad 3 Los estilos definidos en un archivo
+    aplican despues que los estilos definidos en el documento HTML
+    y tambien despues d elos elementos definidos en el elemnto HTML
+*/
+/* 
+    Created on : Nov 12, 2019, 1:43:38 PM
+    Author     : fernando.murcia
+*/
+body {
+    background: #c0c0c0;
+    color: #000080;
+    font-family: "Century Gothic"
+}
+
