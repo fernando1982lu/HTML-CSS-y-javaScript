@@ -1,0 +1,93 @@
+body {
+    background: #ffffff;
+}
+
+img{border: 0;}
+
+h1{
+    padding: 5px 5px 0 5px;
+    margin: 0 0 15px 0;
+    color: #2b7c92;
+    font-size: 2em;
+}
+
+/**
+ * Para crear los tabuladores, se aplica una
+ * tecnica, la cual por medio de tres bloques
+ * de tipo div, vamos a ir agregando
+ * de manera animada las imagenes, hasta formar
+ * todos los elementos de la imagen
+ */
+
+div.tab{
+    background-image: url(css/moto.jpg);
+    display: block;
+    float:left;
+    /*Es el alto de la imagen*/
+    height: 21px;
+    padding: 0;
+    /*Separacion entre tabuladores*/
+    margin: 0 1px 0 0;
+    /*
+    * La imagen de la izquierda no se repite
+    * por default una imagen se repite
+    * en todo el espacio que tenga para
+    * desplazarse
+    */
+    background-repeat: no-repeat;
+}
+div.tab div{
+    background-image:url(css/moto1.jpg);
+    background-repeat:no-repeat;
+    background-position:top right;
+    height:21px;
+    float:left;
+    margin:0;
+}
+div.tab div a{
+	/*
+	 * Las imagenes de la izq y der
+	 * tienen un ancho de 8px, por lo tanto
+	 * dejamos esta espacio para que se completen
+	 * las esquinas
+	 */
+	margin:0 8px;
+	/* Las imagenes tiene un alto de 21px */
+	height:21px;
+	line-height:21px;
+	background-image:url(css/moto2.jpg);
+	display:block;
+	text-decoration:none;
+	vertical-align:middle;
+	float:left;
+	/* Por default se repite la imagen
+	 * pero lo hacemos explicito
+	 */
+	background-repeat:repeat;
+}
+/**
+ * Solamente hay un elemento activo 
+ * en la pagina, por lo tanto 
+ * se utiliza un ID ( # ), en lugar
+ * de una clase ( . )
+ */
+#actual{
+	background-image:url(css/moto3.jpg);
+}
+
+#actual div{
+	background-image:url(css/moto4.jpg);
+}
+
+#actual div a{
+	background-image:url(css/moto5.jpg);
+}
+
+a:link,a:visited{
+	color:#226275;
+	text-decoration:underline;
+}
+
+a:active,a:hover{
+	color:#39a5c4;
+}
