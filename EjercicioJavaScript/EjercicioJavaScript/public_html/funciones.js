@@ -41,7 +41,7 @@ function busqueda(){
          * y concatenamos la respuesta como un parametro
          * de una peticion get
          */
-        var nuevoLink = this + "search?q" + respuesta;
+        var nuevoLink = this + "search?q=" + respuesta;
         alert("Nuevo link: " + nuevoLink);
         //redireccionamos el link
         window.location = nuevoLink;
