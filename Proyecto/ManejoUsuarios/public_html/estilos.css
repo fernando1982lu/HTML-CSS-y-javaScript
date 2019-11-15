@@ -1,0 +1,24 @@
+/* 
+    Created on : Nov 14, 2019, 3:12:55 PM
+    Author     : fernando.murcia
+*/
+body { 
+    background: #F50618;
+    color: white;
+    font-family: 'Helvetica Neue', sans-serif; 
+    font-size: 14px; 
+    line-height: 24px; 
+    margin: 0 0 24px; 
+    text-align: justify; 
+    text-justify: inter-word; 
+}
+
+h1 {  
+    color: #080807; 
+    font-size: 25px; 
+    text-align: center;
+}
+
+.resultado{
+    color:#090304;
+}
